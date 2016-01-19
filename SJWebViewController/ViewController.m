@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
-
+#import "SJFirstWebViewVC.h"
+#import "SJCommonWebViewController.h"
+    
 @interface ViewController ()
+- (IBAction)firstWebView:(UIButton *)sender;
+- (IBAction)secondWebView:(UIButton *)sender;
 
 @end
 
@@ -16,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +28,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)firstWebView:(UIButton *)sender {
+    SJFirstWebViewVC *firstWeb = [[SJFirstWebViewVC alloc] init];
+    [self.navigationController pushViewController:firstWeb animated:YES];
+}
+
+- (IBAction)secondWebView:(UIButton *)sender {
+    SJCommonWebViewController *webView = [[SJCommonWebViewController alloc] initWithURL:@"https://www.baidu.com" title:@"" autoFit:YES];
+    [self.navigationController pushViewController:webView animated:YES];
+}
 @end

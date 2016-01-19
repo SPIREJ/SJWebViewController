@@ -1,25 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P5f-Bz-f2R">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0L7-Ih-et6">
+            <objects>
+                <navigationController id="P5f-Bz-f2R" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1YW-Da-BN1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MHP-lZ-Q0f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jfE-UV-Hno" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2256" y="-42"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBR-cm-dBw">
+                                <rect key="frame" x="112" y="147" width="96" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="FIs-ba-NXd"/>
+                                    <constraint firstAttribute="height" constant="39" id="tCH-Df-OGg"/>
+                                </constraints>
+                                <state key="normal" title="第一种"/>
+                                <connections>
+                                    <action selector="firstWebView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hyk-GZ-JdJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxU-cS-Cka">
+                                <rect key="frame" x="112" y="241" width="96" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="5e7-e4-9S1"/>
+                                    <constraint firstAttribute="width" constant="96" id="cre-vJ-2c2"/>
+                                </constraints>
+                                <state key="normal" title="第二种"/>
+                                <connections>
+                                    <action selector="secondWebView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UL3-Px-tE6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TBR-cm-dBw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5C1-Va-qO8"/>
+                            <constraint firstItem="TBR-cm-dBw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="Igz-KO-6sX"/>
+                            <constraint firstItem="lxU-cS-Cka" firstAttribute="top" secondItem="TBR-cm-dBw" secondAttribute="bottom" constant="55" id="Kg5-ii-8qd"/>
+                            <constraint firstItem="lxU-cS-Cka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rne-TX-ZfG"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6wQ-Go-vHw"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1839" y="-42"/>
         </scene>
     </scenes>
 </document>

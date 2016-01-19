@@ -15,6 +15,10 @@
 		09CA05CA1C4CDE5D005FF14B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09CA05C81C4CDE5D005FF14B /* LaunchScreen.storyboard */; };
 		09CA05D51C4CDE5D005FF14B /* SJWebViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CA05D41C4CDE5D005FF14B /* SJWebViewControllerTests.m */; };
 		09CA05E01C4CDE5D005FF14B /* SJWebViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CA05DF1C4CDE5D005FF14B /* SJWebViewControllerUITests.m */; };
+		09CA05F31C4CE0B2005FF14B /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CA05F01C4CE0B2005FF14B /* NJKWebViewProgress.m */; };
+		09CA05F41C4CE0B2005FF14B /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CA05F21C4CE0B2005FF14B /* NJKWebViewProgressView.m */; };
+		09CA05F71C4CE2A7005FF14B /* SJFirstWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CA05F61C4CE2A7005FF14B /* SJFirstWebViewVC.m */; };
+		09FB915D1C4DD3E800B3AD51 /* SJCommonWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FB915C1C4DD3E800B3AD51 /* SJCommonWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		09CA05DB1C4CDE5D005FF14B /* SJWebViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJWebViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09CA05DF1C4CDE5D005FF14B /* SJWebViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJWebViewControllerUITests.m; sourceTree = "<group>"; };
 		09CA05E11C4CDE5D005FF14B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09CA05EF1C4CE0B2005FF14B /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
+		09CA05F01C4CE0B2005FF14B /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
+		09CA05F11C4CE0B2005FF14B /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgressView.h; sourceTree = "<group>"; };
+		09CA05F21C4CE0B2005FF14B /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressView.m; sourceTree = "<group>"; };
+		09CA05F51C4CE2A7005FF14B /* SJFirstWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJFirstWebViewVC.h; sourceTree = "<group>"; };
+		09CA05F61C4CE2A7005FF14B /* SJFirstWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJFirstWebViewVC.m; sourceTree = "<group>"; };
+		09FB915B1C4DD3E800B3AD51 /* SJCommonWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJCommonWebViewController.h; sourceTree = "<group>"; };
+		09FB915C1C4DD3E800B3AD51 /* SJCommonWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJCommonWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +113,15 @@
 		09CA05B91C4CDE5D005FF14B /* SJWebViewController */ = {
 			isa = PBXGroup;
 			children = (
+				09CA05ED1C4CE08C005FF14B /* ThirdPart */,
 				09CA05BD1C4CDE5D005FF14B /* AppDelegate.h */,
 				09CA05BE1C4CDE5D005FF14B /* AppDelegate.m */,
 				09CA05C01C4CDE5D005FF14B /* ViewController.h */,
 				09CA05C11C4CDE5D005FF14B /* ViewController.m */,
+				09CA05F51C4CE2A7005FF14B /* SJFirstWebViewVC.h */,
+				09CA05F61C4CE2A7005FF14B /* SJFirstWebViewVC.m */,
+				09FB915B1C4DD3E800B3AD51 /* SJCommonWebViewController.h */,
+				09FB915C1C4DD3E800B3AD51 /* SJCommonWebViewController.m */,
 				09CA05C31C4CDE5D005FF14B /* Main.storyboard */,
 				09CA05C61C4CDE5D005FF14B /* Assets.xcassets */,
 				09CA05C81C4CDE5D005FF14B /* LaunchScreen.storyboard */,
@@ -138,6 +155,25 @@
 				09CA05E11C4CDE5D005FF14B /* Info.plist */,
 			);
 			path = SJWebViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		09CA05ED1C4CE08C005FF14B /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				09CA05EE1C4CE0B2005FF14B /* NJKWebViewProgress */,
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		09CA05EE1C4CE0B2005FF14B /* NJKWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				09CA05EF1C4CE0B2005FF14B /* NJKWebViewProgress.h */,
+				09CA05F01C4CE0B2005FF14B /* NJKWebViewProgress.m */,
+				09CA05F11C4CE0B2005FF14B /* NJKWebViewProgressView.h */,
+				09CA05F21C4CE0B2005FF14B /* NJKWebViewProgressView.m */,
+			);
+			path = NJKWebViewProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09CA05F71C4CE2A7005FF14B /* SJFirstWebViewVC.m in Sources */,
+				09CA05F31C4CE0B2005FF14B /* NJKWebViewProgress.m in Sources */,
+				09CA05F41C4CE0B2005FF14B /* NJKWebViewProgressView.m in Sources */,
 				09CA05C21C4CDE5D005FF14B /* ViewController.m in Sources */,
+				09FB915D1C4DD3E800B3AD51 /* SJCommonWebViewController.m in Sources */,
 				09CA05BF1C4CDE5D005FF14B /* AppDelegate.m in Sources */,
 				09CA05BC1C4CDE5D005FF14B /* main.m in Sources */,
 			);
@@ -500,6 +540,7 @@
 				09CA05E61C4CDE5D005FF14B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09CA05E71C4CDE5D005FF14B /* Build configuration list for PBXNativeTarget "SJWebViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +549,7 @@
 				09CA05E91C4CDE5D005FF14B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09CA05EA1C4CDE5D005FF14B /* Build configuration list for PBXNativeTarget "SJWebViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +558,7 @@
 				09CA05EC1C4CDE5D005FF14B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
